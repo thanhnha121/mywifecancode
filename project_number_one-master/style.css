@@ -1,0 +1,298 @@
+@font-face {
+    font-family: sourcecodepro;
+    src: url(assets/fonts/SourceCodePro-Regular.woff);
+}
+
+body {
+    margin: 0;
+    font-family: sourcecodepro;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(243, 245, 247);
+    font-size: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.nav-left {
+    float: left;
+    width: auto;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.nav-left div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 20px;
+}
+.nav-left div:hover {
+    background-color: rgb(164, 166, 168);
+}
+
+.nav-right {
+    float: right;
+    width: auto;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.nav-right span {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.nav-right span:hover {
+    background-color: rgb(164, 166, 168);
+}
+
+.picture {
+    text-align: center;
+    color: rgb(247, 244, 244);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+.text span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.text-left {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 20px;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.project div {
+    height: 25px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.project hr{
+    text-align: center;
+
+}
+
+.wrapper {
+    width: calc(100%-80px);
+    margin-top: 40px;
+    padding-left: 40px;
+    display: inline-block;
+}
+.item {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    padding: 10px;
+    float: left;
+}
+.item img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+.about div {
+    width: calc(100%-100px);
+    height: 25px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.about hr{
+    text-align: center;
+}
+
+.lorem div {
+    width: calc(100%-100px);
+    height: 25px;
+    font-size: 18px;
+    margin-left: 50px;
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+.people {
+    width: calc(100%-80px);
+    margin-top: 120px;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.people-humand {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    padding: 10px;
+    float: lef;
+}
+
+.people-humand img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.people-name {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.people-position {
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(179, 173, 179);
+}
+
+.people-intro {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.people-contact{
+    display: block;
+    height:auto;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: rgb(245, 239, 245);
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 10px 10px;  
+    cursor: pointer;
+}
+
+.people-contact:hover {
+    background-color: rgb(164, 166, 168);
+}
+
+.contact div{
+    width: calc(100%-100px);
+    height: 25px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+
+.contact hr{
+    text-align:center;
+}
+
+.calltoaction{
+    font-size: 18px;
+    margin-left: 50px;
+    display:block;
+    width: calc(100%-100px);
+    margin-top: 15px;
+}
+
+.form{
+    width: calc(100%-100px); 
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 16px; 
+    margin-left: 50px;
+}
+
+.form input{
+    width:1430px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.sendmsg{
+    display:block;
+    margin-left: 50px;
+    margin-top: 40px;
+    height: 40Spx;
+    background-color: black;
+    width: 170px;
+    cursor: pointer;
+
+}
+
+.sendmsg div{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.sendmsg:hover {
+    background-color: rgb(199, 202, 206);
+    color:black;
+}
+
+.sendmsg div:hover {
+    color: black;
+}
+
+.lastimg {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: calc(100%-100px);
+}
+
+.lastimg img {
+    width: 100%;
+}
+
+.ending {
+    display:block;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ending span{
+    display: inline-block;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+    margin-left: 650px;
+}
