@@ -7,7 +7,15 @@
 		<script src="https://use.fontawesome.com/9414e32a5a.js"></script>
 	</head>
 
-	<body>
+	<body id="body">
+		<div class="advance-search" id="advance-search">
+			<div onclick="hideAdvanceSearch()"></div>
+			<div>
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input placeholder="Keyword" />
+			</div>
+		</div>
+
 		<div class="nav">
 			<div class="bar">
 				<div class="b-logo-search">
@@ -20,14 +28,18 @@
 					</div>
 					<div class="bar-search">
 						<i class="fa fa-search" aria-hidden="true"></i>
-						<input class="bs-input" placeholder="Search in Ant Design" />
+						<input
+							class="bs-input"
+							placeholder="Search in Ant Design"
+							onclick="showAdvanceSearch()"
+						/>
 					</div>
 				</div>
 				<div class="bar-links">
-					<a class="bar-link">Design</a>
-					<a class="bar-link">Docs</a>
-					<a class="bar-link">Components</a>
-					<a class="bar-link">Resources</a>
+					<a class="bar-link" onclick="goToElement('recommended')">Recommend</a>
+					<a class="bar-link" onclick="goToElement('design')">Design</a>
+					<a class="bar-link" onclick="goToElement('guildlines')">Guildlines</a>
+					<a class="bar-link" onclick="goToElement('docs')">Docs</a>
 				</div>
 				<div class="bar-menu">
 					<div class="bm-item">4.1.16</div>
@@ -55,7 +67,7 @@
 		</div>
 
 		<div class="content">
-			<div class="recommend">
+			<div class="recommend" id="recommended">
 				<div class="r-title">Recommended</div>
 				<div class="r-popular">
 					<div class="rp-note">Popular</div>
@@ -95,7 +107,7 @@
 				</div>
 			</div>
 
-			<div class="design">
+			<div class="design" id="design">
 				<div class="d-title">Design language and framework</div>
 				<div class="d-content">
 					<div class="d-left">
@@ -148,7 +160,7 @@
 				</div>
 			</div>
 
-			<div class="guildlines">
+			<div class="guildlines" id="guildlines">
 				<div class="guildline1">
 					<div class="g1-item">
 						<div class="g1i-title">Guildlines</div>
@@ -266,7 +278,7 @@
 				</div>
 			</div>
 
-			<div class="learnmore">
+			<div class="learnmore" id="docs">
 				<div class="lm-title">Learnmore <span>More</span></div>
 				<div class="lm-items">
 					<div class="lm-item">
@@ -493,4 +505,7 @@
 			</div>
 		</div>
 	</body>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="index.js"></script>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>JS Basic</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		/>
+		<style>
+			body {
+				width: 800px;
+				margin: 0 auto;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				height: 80vh;
+				border-radius: 10px;
+				margin-top: 10vh;
+				padding: 30px;
+			}
+		</style>
+		<script src="index.js"></script>
+	</head>
+
+	<body>
+		<div class="string">
+			<div class="label">String</div>
+			<div class="row">
+				<div class="col">
+					<input
+						placeholder="First name"
+						type="text"
+						id="first-name"
+						class="form-control"
+					/>
+				</div>
+				<div class="col">
+					<input
+						placeholder="Last name"
+						type="text"
+						id="last-name"
+						class="form-control"
+					/>
+				</div>
+			</div>
+
+			<div id="string-output"></div>
+		</div>
+		<br />
+		<div class="number">
+			<div class="label">Number</div>
+			<input placeholder="Age" type="number" id="age" class="form-control" />
+			<div id="number-output"></div>
+		</div>
+		<br />
+		<div class="date">
+			<div class="label">Date</div>
+			<input placeholder="Birthday" type="date" id="bd" class="form-control" />
+			<div id="date-output"></div>
+		</div>
+		<br />
+		<div class="object">
+			<div class="label">Object</div>
+			<div id="object-output"></div>
+		</div>
+		<br />
+		<div class="array">
+			<div class="label">Array (each skill is separated by a comma)</div>
+			<textarea
+				placeholder="Skills"
+				id="skills"
+				class="form-control"
+			></textarea>
+			<div id="array-output"></div>
+		</div>
+		<br />
+		<button onclick="update()" class="btn btn-primary">
+			Update infomations
+		</button>
+	</body>
+</html>
