@@ -1,0 +1,8 @@
+{
+  "script": "http-server --name my-file-server -- -p 4000 -d false",
+  "ignore_watch": [],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "name": "mywifecancode"
+}
